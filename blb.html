@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Můj web | Welcome</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #090914;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #a78bfa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 8vw, 75px);
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #a78bfa, #38bdf8);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            color: #aaa;
+            font-size: 18px;
+            max-width: 550px;
+            line-height: 1.7;
+        }
+
+        .button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px #8b5cf6;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 50px 8%;
+        }
+
+        .card {
+            background: #151525;
+            border: 1px solid #292943;
+            padding: 30px;
+            border-radius: 20px;
+            width: 280px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: #8b5cf6;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #a78bfa;
+        }
+
+        .card p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MY WEBSITE.</div>
+
+        <nav>
+            <a href="#home">Domů</a>
+            <a href="#about">O mně</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to my world.</h1>
+
+        <p>
+            Vítej na mém webu! Tohle je moje vlastní místo
+            na internetu, kde najdeš zajímavé věci,
+            projekty a další obsah.
+        </p>
+
+        <a href="#about" class="button">Prozkoumat web →</a>
+    </section>
+
+    <section class="cards" id="about">
+
+        <div class="card">
+            <h2>🚀 Projekty</h2>
+            <p>Moje práce, nápady a zajímavé projekty.</p>
+        </div>
+
+        <div class="card">
+            <h2>✨ O mně</h2>
+            <p>Něco málo o mně a o tom, co mě baví.</p>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>📩 Kontakt</h2>
+            <p>Můžeš mě kontaktovat a dozvědět se více.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 My Website. Všechna práva vyhrazena.
+    </footer>
+
+</body>
+</html>
